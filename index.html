@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="imagenes/logo2.png">
+</head>
+<body>
+    <div id="particles-js">
+
+    </div>
+    <div class="contenedor">
+        <div class="logo">
+            <img src="/imagenes/logo.png" alt="milogo">
+        </div>
+        <form action="" class="app" id="app">
+            <div class="fila numero-caracteres">
+                <div class="col">
+                    <label for="numero_caracteres">Numero de caracteres:</label>
+                </div>
+                <div class="col botones">
+                    <div>
+                        <button class="btn" id="btn-menos-uno"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div>
+                        <input type="text" id="numero-caracteres" readonly value="12">
+                    </div>
+                    <div>
+                        <button class="btn" id="btn-mas-uno"><i class="fa-solid fa-plus"></i></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="fila simbolos">
+                <div class="col">
+                    <label for="simbolos">Incluir Simbolos</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-simbolos"><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="fila numeros">
+                <div class="col">
+                    <label for="numero">Incluir Numeros</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-numeros"><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="fila mayusculas">
+                <div class="col">
+                    <label for="mayusculas">Incluir Mayusculas</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-mayusculas"><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="fila generar">
+                <div class="col">
+                    <button class="btn btn-generar" id="btn-generar">Generar<i class="fa-solid fa-key"></i></button>
+                </div>
+                <div class="col">
+                    <input type="text" class="input-password" id="input-password" readonly value="T3T45457g-.&">
+                </div>
+            </div>
+
+
+            <div class="fila alerta">
+                <div class="col">
+                    <div class="alerta-copiado" id="alerta-copiado">
+                        <p><i class="fa-regular fa-copy"></i>Copiado</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        
+    </div>
+      <script src="generador.js"></script>
+</body>
+</html>
